@@ -1,4 +1,3 @@
-
 import { Github, ArrowUp } from 'lucide-react';
 
 const Projects = () => {
@@ -7,19 +6,22 @@ const Projects = () => {
       title: "Personalized Healthcare Recommendation System",
       description: "Built using MIMIC-III data with Logistic Regression and XGBoost models. Implemented NLP techniques with TF-IDF for text processing and achieved ROC-AUC score of 0.71. Developed interactive Streamlit frontend for healthcare professionals.",
       technologies: ["Python", "XGBoost", "TF-IDF", "Streamlit", "MIMIC-III"],
-      color: "from-red-500 to-pink-500"
+      color: "from-red-500 to-pink-500",
+      githubUrl: "https://github.com/shashank080/Personalized-Healthcare-Recommendation-System-for-ICU-Patients-main"
     },
     {
       title: "Anti-Money Laundering Detection",
       description: "Developed a distributed machine learning system using PySpark for processing large financial datasets. Implemented Logistic Regression for anomaly detection with comprehensive data visualization using Matplotlib and Seaborn.",
       technologies: ["PySpark", "Logistic Regression", "Matplotlib", "Seaborn", "Big Data"],
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-cyan-500",
+      githubUrl: "https://github.com/shashank080/Anti-MoneyLaunnderingDetectionSystem"
     },
     {
       title: "Forest Fire Detection System",
       description: "Created an early detection system using Sentinel-2 satellite imagery and deep learning models. Integrated PostgreSQL with PostGIS for geospatial data management and optimized detection algorithms for real-time monitoring.",
       technologies: ["Deep Learning", "Sentinel-2", "PostgreSQL", "PostGIS", "Computer Vision"],
-      color: "from-green-500 to-emerald-500"
+      color: "from-green-500 to-emerald-500",
+      githubUrl: "https://github.com/shashank080?tab=repositories"
     }
   ];
 
@@ -66,10 +68,15 @@ const Projects = () => {
                 ))}
               </div>
               
-              <button className="flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors duration-200">
+              <a 
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors duration-200"
+              >
                 <Github size={16} />
                 <span className="font-medium">View Project</span>
-              </button>
+              </a>
             </div>
           ))}
         </div>
