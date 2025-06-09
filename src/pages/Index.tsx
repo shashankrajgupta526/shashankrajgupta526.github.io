@@ -8,6 +8,7 @@ import Skills from '../components/Skills';
 import Technologies from '../components/Technologies';
 import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
+import FloatingChatbot from '../components/FloatingChatbot';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -44,6 +45,7 @@ const Index = () => {
       <Skills />
       <Projects />
       <Contact />
+      <FloatingChatbot />
     </div>
   );
 };
