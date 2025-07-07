@@ -30,7 +30,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
               <button 
-                onClick={() => window.open('https://www.dropbox.com/scl/fi/wfk1bzjgttl99lsefyn1l/shashankgunta-resume.pdf?rlkey=mzqvdv8n27rkb6xreqjt9qtki&st=oygi55lp&dl=0', '_blank')}
+                onClick={() => window.open('https://www.dropbox.com/scl/fi/wfk1bzjgttl99lsefyn1l/ShashankGunta-resume.pdf?rlkey=mzqvdv8n27rkb6xreqjt9qtki&st=rdj7g1v4&dl=0', '_blank')}
                 className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
               >
                 Download Resume
